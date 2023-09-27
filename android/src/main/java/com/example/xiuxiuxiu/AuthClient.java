@@ -166,17 +166,17 @@ public class AuthClient {
             return;
         }
         result.success(true);
-        if (!initSdkSuccess) {
+        // if (!initSdkSuccess) {
             mAuthHelper = PhoneNumberAuthHelper.getInstance(activity, tokenResultListener);
             mAuthHelper.getReporter().setLoggerEnable(authModel.getEnableLog());
             ///开始初始化
             mAuthHelper.setAuthSDKInfo(authModel.getAndroidSdk());
             mAuthHelper.checkEnvAvailable(PhoneNumberAuthHelper.SERVICE_TYPE_LOGIN);
             initSdkSuccess = true;
-        } else {
+        // } else {
             ///检查环境
-            mAuthHelper.checkEnvAvailable(PhoneNumberAuthHelper.SERVICE_TYPE_LOGIN);
-        }
+            // mAuthHelper.checkEnvAvailable(PhoneNumberAuthHelper.SERVICE_TYPE_LOGIN);
+        // }
     }
 
     /**
