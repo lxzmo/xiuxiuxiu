@@ -1,3 +1,7 @@
+## 0.0.4
+
+* AliAuth update.
+
 ## 0.0.3
 
 * Improve the Android platform.
